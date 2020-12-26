@@ -12,3 +12,16 @@ const twoSum = (numbers, target) => {
 }; 
 
 twoSum(numbers, 26)
+
+// brute force
+const bruteForce = (numbers, target) => {
+    for (let i=0; i < numbers.length; i++){
+        for (let j=0; j < numbers.length; j++){
+            if (numbers[i] + numbers[j] === target) {
+                return [i,j]
+            }
+        }
+    }
+};
+
+bruteForce(numbers, 26)
